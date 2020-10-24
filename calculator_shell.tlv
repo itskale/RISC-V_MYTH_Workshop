@@ -14,7 +14,13 @@
          
          
          // YOUR CODE HERE
-         // ...
+         $val1[31:0] = $rand1[3:0];
+         $val2[31:0] = $rand2[3:0];
+
+         $sum[31:0]  = $val1 + $val2;
+         $diff[31:0] = $val1 - $val2;
+         $prod[31:0] = $val1 * $val2;
+         $quot[31:0] = $val1 / $val2;
          
 
       // Macro instantiations for calculator visualization(disabled by default).
