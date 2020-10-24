@@ -22,6 +22,8 @@
          $prod[31:0] = $val1 * $val2;
          $quot[31:0] = $val1 / $val2;
          
+         $out[31:0] = ($op[1:0] == 0) ? $sum : ($op[1:0] == 1) ? $diff : ($op[1:0] == 2) ? $prod : $diff;
+        
 
       // Macro instantiations for calculator visualization(disabled by default).
       // Uncomment to enable visualisation, and also,
